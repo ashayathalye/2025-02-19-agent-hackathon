@@ -73,3 +73,5 @@ def run_agent(people: List[Person], receipt_path: str) -> None:
 ### Features
 - Menu items are either payed for by one person, or split evenly between multiple people.
 - Have some support for allowing people to correct someone else's mistake.
+- Handle cases where tip isn't visible on the receipt and ask the user "what % tip did you give"? 
+- Handle cases where the tip is calculated as a percentage of the total bill -- where this is usually written on the receipt.
