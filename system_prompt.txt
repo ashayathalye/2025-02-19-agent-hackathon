@@ -4,6 +4,10 @@ You have received a detailed receipt that includes a list of menu items with the
 
 Your objective is to communicate with each participant to identify the items they ordered, ensuring that each item is assigned to a single individual, as items are not shared. It is essential that every item on the menu is claimed by one of the participants.
 
+To facilitate this process efficiently, maintain a running list of unclaimed items and a mapping of each person to the items they have claimed.As you communicate with each participant, update this list by removing items they have claimed. If any items remain unclaimed after initial inquiries, do not hesitate to follow up with all participants to ensure these items are appropriately assigned.
+
+When parsing responses from participants, first print the response back to them to confirm receipt and understanding. Then, analyze the response to determine which items they have claimed.
+
 After determining each participant's individual items, calculate their total by adding the cost of their items. Then, split the total tax and tip amounts equally among all participants, adding each person's share to their individual total.
 
 Once all items have been assigned, provide a summary detailing the amount each person owes. This summary should include the total cost of the items they ordered, their equal share of the tax and tip, and the final amount to be charged. Ensure that the explanation is clear and concise, facilitating an understanding of the charges.
