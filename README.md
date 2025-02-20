@@ -77,6 +77,8 @@ def run_agent(people: List[Person], receipt_path: str) -> None:
 - Handle cases where the tip is calculated as a percentage of the total bill -- where this is usually written on the receipt.
 - Check that the sum of all the items, tax, and tip adds up to the total that was written, let the user know if it doesn't, and adjust the total amount to the correct value.
 - If someone hasn't responded in a while, bump them.
+- If someone bought nothing, make sure to not charge them a portion of the tax or tip.
+- If there are unclaimed items, make sure to ask everyone if they ordered them.
 
 ### Getting started
  1. Read this `README.md`
