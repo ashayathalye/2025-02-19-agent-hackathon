@@ -83,7 +83,6 @@ def load_system_prompt(prompt_file_path, contacts_file_path, receipt_file_path):
         f"Here is the receipt information:\n{menu_items}\n{tip}\n{tax}"
     )
     
-    import pdb; pdb.set_trace()
     return full_prompt
 
 
