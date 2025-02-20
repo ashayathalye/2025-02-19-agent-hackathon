@@ -1,13 +1,13 @@
 import os
 from smolagents import LiteLLMModel, CodeAgent
 import json
+from receipt_to_json import receipt2json
 from tools import *
 
 prompt_file_path = "system_prompt.txt"
 contacts_file_path = "contacts.json"
 receipt_file_path = "receipt.json"
 
-import json
 
 def load_system_prompt(prompt_file_path, contacts_file_path, receipt_file_path):
     # Load the system prompt from the text file
@@ -23,9 +23,10 @@ def load_system_prompt(prompt_file_path, contacts_file_path, receipt_file_path):
         [f"Name: {person['name']}, Number: {person['number']}" for person in contacts]
     )
     
-    # Load the receipt information from the JSON file
-    with open(receipt_file_path, 'r') as receipt_file:
-        receipt = json.load(receipt_file)
+    # # Load the receipt information from the JSON file
+    # with open(receipt_file_path, 'r') as receipt_file:
+    #     receipt = json.load(receipt_file)
+    receipt = receipt2json(receipt_file_path)
     
     # Format the receipt information
     menu_items = "\n".join(
@@ -46,6 +47,7 @@ def load_system_prompt(prompt_file_path, contacts_file_path, receipt_file_path):
 
 def main():
     model = LiteLLMModel('openai/gpt-4o')
+    receipt_file_path = input("Enter the receipt filepath: ")
     task = load_system_prompt(prompt_file_path, contacts_file_path, receipt_file_path)
     agent = CodeAgent(tools=[send_message, wait_for_response], model=model, add_base_tools=False, max_steps=100)
     agent.run(task)
