@@ -1,3 +1,5 @@
 smolagents
 litellm
 twilio
+openai
+pytesseract
