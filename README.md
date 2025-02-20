@@ -80,6 +80,7 @@ def run_agent(people: List[Person], receipt_path: str) -> None:
 - If someone bought nothing, make sure to not charge them a portion of the tax or tip.
 - If there are unclaimed items, make sure to ask everyone if they ordered them.
 - Handle cases where someone's response does not exactly specify an item (there's ambiguity). 
+- Handle cases where multiple people claim the same item.
 
 ### Getting started
  1. Read this `README.md`
