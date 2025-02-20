@@ -30,7 +30,7 @@ Ask the user to write a short poem, and then return a version of the poem with t
 
 def main():
     model = LiteLLMModel('openai/gpt-4o')
-    agent = CodeAgent(tools=[ask_for_input], model=model, add_base_tools=True)
+    agent = CodeAgent(tools=[ask_for_input], model=model, add_base_tools=False)
     agent.run(SYSTEM_PROMPT)
 
 if __name__ == "__main__":
