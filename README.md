@@ -75,3 +75,4 @@ def run_agent(people: List[Person], receipt_path: str) -> None:
 - Have some support for allowing people to correct someone else's mistake.
 - Handle cases where tip isn't visible on the receipt and ask the user "what % tip did you give"? 
 - Handle cases where the tip is calculated as a percentage of the total bill -- where this is usually written on the receipt.
+- Check that the sum of all the items, tax, and tip adds up to the total that was written, let the user know if it doesn't, and adjust the total amount to the correct value.
