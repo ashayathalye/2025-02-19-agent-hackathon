@@ -1,6 +1,7 @@
 import openai
 import os
 import base64
+import json
 
 # Retrieve OpenAI API key from environment variable
 client = openai.OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
@@ -57,4 +58,7 @@ def receipt2json(image_path):
         max_tokens=500
     )
 
-    return response.choices[0].message.content.strip()  # Return extracted JSON as a string
+    st = response.choices[0].message.content.strip()  # Return extracted JSON as a string
+    si = st.find('{')
+    ei = st.rfind('}')
+    return json.loads(st[si:ei+1])
