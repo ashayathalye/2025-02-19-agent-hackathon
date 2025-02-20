@@ -69,3 +69,7 @@ def run_agent(people: List[Person], receipt_path: str) -> None:
 
 - What is the right interface to multiple threaded conversations? Here's one basic sketch that should work with an all-powerful agent, but probably won't work with today's agents. Have a `send_message(number, text)` tool, and have a `wait()` tool that returns the next available information; if there's an incoming text message, it can just return the string "New message from: <number> --- <contents>", but then the agent will need to correlate that with the previous messages in that particular conversation, based on the number. Might be better to supply the last N messages in that conversation? Or having that as a tool, to let the agent look it up?
 - What's the right way to do async? The "wait for input" tool seems like one hacky way, is there a better way? Better way with smolagents, or need another library?
+
+### Features
+- Menu items are either payed for by one person, or split evenly between multiple people.
+- Have some support for allowing people to correct someone else's mistake.
