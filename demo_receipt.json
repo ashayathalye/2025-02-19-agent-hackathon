@@ -1,0 +1,26 @@
+{
+    "menu_items": [
+        {
+            "name": "Margherita Pizza",
+            "cost": 12.99
+        },
+        {
+            "name": "Caesar Salad",
+            "cost": 8.50
+        },
+        {
+            "name": "Spaghetti Carbonara",
+            "cost": 14.75
+        },
+        {
+            "name": "Garlic Bread",
+            "cost": 4.25
+        },
+        {
+            "name": "Tiramisu",
+            "cost": 6.00
+        }
+    ],
+    "tip": 10.00,
+    "tax": 5.00
+}
