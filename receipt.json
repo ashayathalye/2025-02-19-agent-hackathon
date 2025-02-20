@@ -1,0 +1,46 @@
+{
+    "menu_items": [
+        {
+            "name": "Margherita Pizza",
+            "cost": 12.99
+        },
+        {
+            "name": "Caesar Salad",
+            "cost": 8.50
+        },
+        {
+            "name": "Spaghetti Carbonara",
+            "cost": 14.75
+        },
+        {
+            "name": "Garlic Bread",
+            "cost": 4.25
+        },
+        {
+            "name": "Tiramisu",
+            "cost": 6.00
+        },
+        {
+            "name": "Mushroom Risotto",
+            "cost": 13.50
+        },
+        {
+            "name": "Bruschetta",
+            "cost": 7.00
+        },
+        {
+            "name": "Lasagna",
+            "cost": 15.00
+        },
+        {
+            "name": "Minestrone Soup",
+            "cost": 5.50
+        },
+        {
+            "name": "Panna Cotta",
+            "cost": 6.75
+        }
+    ],
+    "tip": 10.00,
+    "tax": 5.00
+}

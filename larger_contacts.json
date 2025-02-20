@@ -1,0 +1,42 @@
+[
+    {
+        "name": "John Doe",
+        "number": "123-456-7890"
+    },
+    {
+        "name": "Jane Smith",
+        "number": "234-567-8901"
+    },
+    {
+        "name": "Alice Johnson",
+        "number": "345-678-9012"
+    },
+    {
+        "name": "Bob Brown",
+        "number": "456-789-0123"
+    },
+    {
+        "name": "Charlie Davis",
+        "number": "567-890-1234"
+    },
+    {
+        "name": "Diana Evans",
+        "number": "678-901-2345"
+    },
+    {
+        "name": "Ethan Harris",
+        "number": "789-012-3456"
+    },
+    {
+        "name": "Fiona Garcia",
+        "number": "890-123-4567"
+    },
+    {
+        "name": "George Clark",
+        "number": "901-234-5678"
+    },
+    {
+        "name": "Hannah Lewis",
+        "number": "012-345-6789"
+    }
+]
