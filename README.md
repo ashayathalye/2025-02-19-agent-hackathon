@@ -1,4 +1,5 @@
 # Agent Hackathon
+A receipt-splitting agent that extracts items from a restaurant bill, independently messages each participant to ask what they ordered, and sends Venmo requests accordingly.
 
 ## Pseudocode
 
